@@ -1,0 +1,29 @@
+#
+# Copyright (c) Amesio <support@amesio.com>
+#
+
+include:
+  - project: amesio/operation/pipelines
+    ref: $CI_DEFAULT_BRANCH
+    file:
+      - pipelines/base/.gitlab-ci.yml
+      - pipelines/security/.gitlab-ci.yml
+      - pipelines/auto-merge-request/.gitlab-ci.yml
+      - pipelines/github/.gitlab-ci.yml
+
+#
+# Autostart
+#
+
+auto-merge-request:
+  extends: .template-auto-merge-request
+
+github-upstream-tags:
+  extends: .template-github-upstream-tags
+  variables:
+    UPSTREAM_CI_GITHUB_PROJECT: .github
+
+github-upstream-branch:
+  extends: .template-github-upstream-branch
+  variables:
+    UPSTREAM_CI_GITHUB_PROJECT: .github
