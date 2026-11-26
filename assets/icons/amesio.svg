@@ -1,0 +1,21 @@
+<svg viewBox="0 0 801 801" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Amesio">
+  <defs>
+    <!-- The designer's "Logo 10.svg" paints this through a <pattern>: a 1025-unit
+         gradient tile (the app icon's own field) shifted by -112. This is the
+         gradient that pattern paints, placed in this viewBox, because a pattern
+         fill is one more indirection than the asset pipeline's renderers and the
+         hand-copied web/mobile marks can follow. -->
+    <linearGradient id="logoGradient" x1="400.5" y1="-112" x2="400.5" y2="913" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF0004"/>
+      <stop offset="0.33" stop-color="#FF5219"/>
+      <stop offset="0.66" stop-color="#FFA52E"/>
+      <stop offset="1" stop-color="#FF7623"/>
+    </linearGradient>
+  </defs>
+  <g id="logo">
+    <path
+      d="M714.639 400.5C714.639 227.006 573.994 86.3612 400.5 86.3612C227.006 86.3612 86.3612 227.006 86.3612 400.5C86.3612 573.994 227.006 714.639 400.5 714.639H618.861C671.758 714.639 714.639 671.758 714.639 618.861V400.5ZM535.979 579.16V400.5C535.979 325.677 475.323 265.021 400.5 265.021C325.677 265.021 265.021 325.677 265.021 400.5C265.021 424.348 245.688 443.681 221.84 443.681C197.992 443.681 178.66 424.348 178.66 400.5C178.66 277.981 277.981 178.66 400.5 178.66C523.019 178.66 622.34 277.981 622.34 400.5V579.16C622.34 603.008 603.008 622.34 579.16 622.34C555.312 622.34 535.979 603.008 535.979 579.16ZM801 618.861C801 719.454 719.454 801 618.861 801H400.5C179.31 801 0 621.69 0 400.5C0 179.31 179.31 0 400.5 0C621.69 0 801 179.31 801 400.5V618.861Z"
+      fill="url(#logoGradient)"
+    />
+  </g>
+</svg>
